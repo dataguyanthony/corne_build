@@ -26,7 +26,6 @@
         behaviors {
             td0: shift_capsword {
                 compatible = "zmk,behavior-tap-dance";
-                label = "SHIFT_CAPSWORD";
                 #binding-cells = <0>;
                 tapping-term-ms = <200>;
                 bindings = <&kp LSHFT>, <&kt LSHFT>;
@@ -38,7 +37,7 @@
 
                 default_layer {
                         bindings = <
-   &kp BKSP           &kp Q              &kp W              &kp E              &kp R              &kp T              &kp Y              &kp U              &kp I              &kp O              &kp P              &kp BSLH
+   &kp BSPC           &kp Q              &kp W              &kp E              &kp R              &kp T              &kp Y              &kp U              &kp I              &kp O              &kp P              &kp BSLH
    &kp TAB            &kp A              &kp S              &kp D              &kp F              &kp G              &kp H              &kp J              &kp K              &kp L              &kp SEMI           &kp SQT
    &td0               &mt LCTRL Z        &kp X              &kp C              &kp V              &kp B              &kp N              &kp M              &kp COMMA          &kp DOT            &mt RCTRL FSLH     &kp RSHFT
                                                             &kp LALT           &mt LGUI LG(SPACE) &lt 1 SPACE        &lt 2 RET          &kp RCTRL          &kp RGUI
@@ -65,7 +64,7 @@
 
                 adjust_layer {
                         bindings = <
-   &reset             &kp C_PP           &kp C_MUTE         &kp C_VOL_DN       &kp C_VOL_UP       &none              &none              &bt BT_CLR         &none              &none              &none              &reset
+   &sys_reset             &kp C_PP           &kp C_MUTE         &kp C_VOL_DN       &kp C_VOL_UP       &none              &none              &bt BT_CLR         &none              &none              &none              &sys_reset
    &none              &none              &none              &kp LC(LEFT)       &kp LC(RIGHT)      &none              &bt BT_PRV         &bt BT_SEL 0       &bt BT_NXT         &none              &none              &none
    &bootloader        &kp C_BRI_DN       &kp C_BRI_UP       &kp LC(UP)         &kp LG(DOWN)       &none              &none              &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 2       &bt BT_SEL 2       &none
                                                             &trans             &trans             &trans             &trans             &trans             &trans
